@@ -218,7 +218,7 @@ function plot_points(data) {
 
     }; // end plot points
          
-        d3.csv("./graphdata/sara_lived_worked_new.csv", function(d) {
+        d3.csv("./data/sara_lived_worked_new.csv", function(d) {
           d['circlesize'] = +d['circlesize'];
           return d;            
         }, plot_points);
@@ -252,7 +252,7 @@ function plot_points(data) {
     http://mbostock.github.io/d3/talk/20111018/azimuthal.html
     -->
         <script type="text/javascript">
-            d3.json("./graphdata/world_countries.json", draw);
+            d3.json("./data/world_countries.json", draw);
         </script>
     </div>
         
